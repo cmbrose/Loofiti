@@ -5,14 +5,14 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 /**
- * Facilitates shared preferences storage of AppStats and Achievement objects.
+ * Facilitates shared preferences storage of AppStats objects.
  */
-public class StorageHelper {
+public class AppStatsStorage {
 	
 	private SharedPreferences prefs;
 	private Context context;
 	
-	public StorageHelper(Context context) {
+	public AppStatsStorage(Context context) {
 		this.context = context;
 		prefs = context.getSharedPreferences(context.getString(R.string.pref_name), Context.MODE_PRIVATE);
 	}
